@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1119">
+  <meta name="description" content="Projet expérimental de Première sur le pH des sodas.">
+  <title>Le pH des sodas — Labo Sodas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil">
+      <span class="brand-mark">pH</span>
+      <span>
+        LABO SODAS
+        <small>Projet expérimental · Première</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+    <nav id="nav">
+      <a href="#problematique">Problématique</a>
+      <a href="#echelle">Échelle du pH</a>
+      <a href="#protocole">Protocole</a>
+      <a href="#resultats">Résultats</a>
+      <a href="#conclusion">Conclusion</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ACCUEIL -->
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="dot"></span>
+          CHIMIE · EXPÉRIENCE SCIENTIFIQUE
+        </p>
+
+        <h1>Quel est le <span>pH</span><br>des sodas&nbsp;?</h1>
+
+        <p class="hero-lead">
+          Une expérience pour mesurer l'acidité de boissons gazeuses,
+          comparer leurs résultats et comprendre ce que révèle le pH.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#protocole">
+            Découvrir l'expérience <span>↘</span>
+          </a>
+          <a class="button secondary" href="#resultats">
+            Voir les résultats
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-icon">i</span>
+          Tout les donnés affichées sont réelles et ont été mesurées, analysées et compzrées en laboratoires.
+        </div>
+      </div>
+
+      <div class="hero-visual"
+        aria-label="Illustration de verres de soda et d'une échelle de pH">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+
+        <div class="glass glass-cola">
+          <div class="liquid"></div>
+          <div class="ice ice1"></div>
+          <div class="ice ice2"></div>
+        </div>
+
+        <div class="glass glass-orange">
+          <div class="liquid"></div>
+          <div class="ice ice3"></div>
+        </div>
+
+        <div class="glass glass-lemon">
+          <div class="liquid"></div>
+          <div class="ice ice4"></div>
+        </div>
+
+        <div class="ph-tag">
+          <span>ÉCHELLE DU pH</span>
+          <strong>0 — 14</strong>
+          <div class="mini-scale">
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <span class="visual-caption">Observer · Mesurer · Comparer</span>
+      </div>
+    </section>
+
+    <!-- RAPPEL RAPIDE -->
+    <section class="stats-strip">
+      <div>
+        <strong>0–14</strong>
+        <span>Échelle du pH</span>
+      </div>
+      <div>
+        <strong>pH &lt; 7</strong>
+        <span>Solution acide</span>
+      </div>
+      <div>
+        <strong>pH = 7</strong>
+        <span>Neutre à 25 °C</span>
+      </div>
+      <div>
+        <strong>pH &gt; 7</strong>
+        <span>Solution basique</span>
+      </div>
+    </section>
+
+    <!-- PROBLÉMATIQUE -->
+    <section class="section intro-grid" id="problematique">
+      <div>
+        <p class="eyebrow">01 / QUESTION DE DÉPART</p>
+        <h2>La même acidité<br><span>dans chaque soda&nbsp;?</span></h2>
+      </div>
+
+      <div class="intro-copy">
+        <p>
+          Les sodas ont souvent un goût sucré, mais ils peuvent aussi
+          contenir des acides. Le pH permet d'estimer le caractère
+          acide ou basique d'une solution.
+        </p>
+
+        <div class="question-card">
+          <span class="question-mark">?</span>
+          <div>
+            <strong>Problématique</strong>
+            <p>Dans quelle mesure l’acidité  des boissons consommées par les jeunes franchit-elle le seuil critique d'attaque de l'émail dentaire, et quelle est la part du CO2 par rapport aux additifs acidifiants &nbsp;?</p>
+          </div>
+        </div>
+
+        <p class="small-muted">
+          <strong>Hypothèse à tester :</strong>
+          Nous supposons que l'ensemble des boissons sucrées et sodas présentent un Ph très inférieur au seuil critique de déminéralisation de l'émail dentaire, augmentant ainsi le risque d'érosion dentaire. Nous estimons également que le dégazage fera remonter le pH de l'eau pétillante vers la neutralité mais n'aura que très peu d'impact sur le pH du Coca-Cola, et du Fanta en raison des acides forts ajoutés.
+        </p>
+      </div>
+    </section>
+
+    <!-- ÉCHELLE DU PH -->
+    <section class="section scale-section" id="echelle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / RAPPEL DE COURS</p>
+          <h2>Comprendre l'échelle du pH</h2>
+        </div>
+
+        <p>
+          À température ambiante, le pH d'une solution aqueuse est
+          généralement présenté sur une échelle de 0 à 14.
+        </p>
+      </div>
+
+      <div class="ph-scale">
+        <div class="scale-numbers">
+          <span>0</span><span>1</span><span>2</span><span>3</span>
+          <span>4</span><span>5</span><span>6</span><span>7</span>
+          <span>8</span><span>9</span><span>10</span><span>11</span>
+          <span>12</span><span>13</span><span>14</span>
+        </div>
+
+        <div class="scale-bar"></div>
+
+        <div class="scale-labels">
+          <span>ACIDE</span>
+          <span>NEUTRE</span>
+          <span>BASIQUE</span>
+        </div>
+      </div>
+
+      <div class="scale-examples">
+        <article>
+          <span class="example-dot acid"></span>
+          <div>
+            <strong>pH inférieur à 7</strong>
+            <p>La solution est acide.</p>
+          </div>
+        </article>
+
+        <article>
+          <span class="example-dot neutral"></span>
+          <div>
+            <strong>pH égal à 7</strong>
+            <p>La solution est neutre à 25 °C.</p>
+          </div>
+        </article>
+
+        <article>
+          <span class="example-dot basic"></span>
+          <div>
+            <strong>pH supérieur à 7</strong>
+            <p>La solution est basique.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="info-line">
+        À retenir : le pH permet d'estimer le caractère acide ou basique d'une solution, mais il ne renseigne pas sur la quantité totale d'acide présent.
+      </p>
+    </section>
+
+    <!-- PROTOCOLE -->
+    <section class="section protocol-section" id="protocole">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 / MANIPULATION</p>
+          <h2>Le protocole expérimental</h2>
+        </div>
+
+        <span class="pill">À adapter avec ton professeur</span>
+      </div>
+
+      <div class="protocol-grid">
+        <article class="protocol-card">
+          <span class="step">01</span>
+          <div class="step-icon">🧪</div>
+          <h3>Préparer</h3>
+          <p>
+            Nettoyer le materiel avec de l'eau distillée.
+            Verser un petit volume de chaque boisson dans un becher.
+          </p>
+        </article>
+
+        <article class="protocol-card">
+          <span class="step">02</span>
+          <div class="step-icon">🔬</div>
+          <h3>Mesurer</h3>
+          <p>
+            Mesurer le pH avec un pH-mètre étalonné en suivant les consignes du laboratoire.
+          </p>
+        </article>
+
+        <article class="protocol-card">
+          <span class="step">03</span>
+          <div class="step-icon">📝</div>
+          <h3>Noter</h3>
+          <p>
+            Relever la valeur, la méthode et les observations.
+            Nettoyer, à l'aide d'eau distillée, la totalité du matériel utilisé entre deux échantillons.
+          </p>
+        </article>
+
+        <article class="protocol-card">
+          <span class="step">04</span>
+          <div class="step-icon">📊</div>
+          <h3>Comparer</h3>
+          <p>
+            Reporter les mesures dans un tableau et comparer les
+            valeurs obtenues de pH pour chaque boisson.
+            Puis représenter les résultats sur un graphique pour visualiser les différences en utilisant Excel.
+          </p>
+        </article>
+      </div>
+
+      <div class="safety">
+        <span>⚠</span>
+        <div>
+          <strong>Sécurité au laboratoire</strong>
+          <p>
+            Ne pas boire les échantillons utilisés. Porter les protections
+            demandées, éviter les projections et respecter les consignes
+            du professeur. 
+          </p>
+          <p>
+            Dans notre cas, tout, c'est bien déroulé, nous avons respecté les regles du laboratoire
+            ainsi que le matériel afin de ne pas se blesser et de ne pas abimer le matiériel preté.
+            Les consignes étaient claires et simples à suivre, ce qui nous a permis de ne pas perdre 
+            de temps.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉSULTATS : GÉNÉRÉS PAR script.js -->
+    <section class="section results-section" id="resultats">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">04 / DONNÉES</p>
+          <h2>Résultats des mesures</h2>
+        </div>
+
+        <p>
+          Les boissons, leurs valeurs et le graphique sont définis
+          directement dans le fichier JavaScript.
+        </p>
+      </div>
+
+      <div class="results-layout">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Boisson</th>
+                <th>pH avant ouverture</th>
+                <th>pH après 24 h</th>
+                <th>Évolution</th>
+              </tr>
+            </thead>
+          <tbody id="resultsBody"></tbody>
+
+            <tbody id="resultsBody">
+              <!-- Contenu généré par script.js -->
+            </tbody>
+          </table>
+
+          <p class="tiny-note">
+            Les données sont sures et certaines. Elles ont été mesurées avec un pH-mètre étalonné et les résultats sont fiables. 
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-title">
+            <div>
+              <span class="chart-kicker">VISUALISATION</span>
+              <h3>Comparer les pH</h3>
+            </div>
+            <span class="chart-unit">pH</span>
+          </div>
+
+          <div id="chart" class="chart"
+            role="img" aria-label="Graphique des pH des boissons">
+            <!-- Graphique généré par script.js -->
+          </div>
+
+          <div class="chart-foot">
+            <span><i class="legend-dot"></i> Valeur du pH juste après l'ouverture</span>
+            <span><i class="legend-dot1"></i> Valeur du pH juste après 24h</span>
+            <span>Échelle de 0 à 14</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSION STATIQUE -->
+    <section class="section analysis-section" id="conclusion">
+      <div class="analysis-card">
+        <div class="analysis-main">
+          <p class="eyebrow">05 / INTERPRÉTATION</p>
+          <h2>Conclusion de l'expérience</h2>
+
+          <p>
+            Cette section est réservée à la conclusion finale du projet.
+            Elle pourra présenter les résultats principaux, répondre
+            à la problématique et préciser si l'hypothèse de départ
+            est confirmée.
+          </p>
+
+          <p>
+            La conclusion définitive sera rédigée après les mesures
+            expérimentales, à partir des résultats réellement obtenus.
+          </p>
+        </div>
+
+        <aside class="analysis-aside">
+          <span class="aside-icon">✦</span>
+          <h3>Pour aller plus loin</h3>
+
+          <ul>
+            <li>Le dégazage peut-il influencer la mesure&nbsp;?</li>
+            <li>Le papier pH est-il aussi précis qu'un pH-mètre&nbsp;?</li>
+            <li>Le pH suffit-il à connaître la quantité totale d'acide&nbsp;?</li>
+          </ul>
+
+          
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="section sources-section">
+      <p class="eyebrow">06 / POUR LE RAPPORT</p>
+      <h2>Sources et limites</h2>
+
+      <div class="sources-grid">
+        <article>
+          <h3>Sources à consulter</h3>
+          <p>
+            On n'a pas vraiment de source sur ce projet, il n'y a qu'eu que des analyses, compraisons et mesures faites par le groupe.
+          </p>
+        </article>
+
+        <article>
+          <h3>Limites de l'expérience</h3>
+          <p>
+            La température, l'étalonnage, le dégazage, la précision du
+            matériel et la répétabilité peuvent influencer les résultats.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#accueil">
+      <span class="brand-mark">pH</span>
+      <span>
+        LABO SODAS
+        <small>Projet expérimental · Première</small>
+      </span>
+    </a>
+
+    <p>Un projet scolaire pour observer, mesurer et expliquer.</p>
+    <a href="#accueil" class="back-top">Retour en haut ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
